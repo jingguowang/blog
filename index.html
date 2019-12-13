@@ -63,9 +63,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-youhua" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-表单校验" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/2019/12/12/youhua/" class="article-date">
+    <a href="/blog/2019/12/12/%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/" class="article-date">
   <time datetime="2019-12-12T07:05:21.740Z" itemprop="datePublished">2019-12-12</time>
 </a>
     
@@ -77,7 +77,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/12/12/youhua/">youhua</a>
+      <a class="article-title" href="/blog/2019/12/12/%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/">表单校验</a>
     </h1>
   
 
@@ -89,7 +89,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/12/youhua/" data-id="ck43fmhv40001kkux207e6kqz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/12/%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/" data-id="ck43fzimy0000mkuxdq7s2etn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,9 +99,9 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-什么是闭包" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/2019/12/12/hello-world/" class="article-date">
+    <a href="/blog/2019/12/12/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/" class="article-date">
   <time datetime="2019-12-12T06:56:11.892Z" itemprop="datePublished">2019-12-12</time>
 </a>
     
@@ -113,7 +113,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/12/12/hello-world/">什么是闭包</a>
+      <a class="article-title" href="/blog/2019/12/12/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/">什么是闭包</a>
     </h1>
   
 
@@ -123,22 +123,12 @@
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h1 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h1><h2 id="在外部函数-访问内部函数的变量"><a href="#在外部函数-访问内部函数的变量" class="headerlink" title="在外部函数 访问内部函数的变量"></a>在外部函数 访问内部函数的变量</h2><h3 id="函数嵌套函数，内部函数访问外部函数的参数或者变量，让参数或者变量长期驻扎在内存中，不被释放。就形成了闭包。"><a href="#函数嵌套函数，内部函数访问外部函数的参数或者变量，让参数或者变量长期驻扎在内存中，不被释放。就形成了闭包。" class="headerlink" title="函数嵌套函数，内部函数访问外部函数的参数或者变量，让参数或者变量长期驻扎在内存中，不被释放。就形成了闭包。"></a>函数嵌套函数，内部函数访问外部函数的参数或者变量，让参数或者变量长期驻扎在内存中，不被释放。就形成了闭包。</h3><h3 id="闭包的缺点-容易引起内存泄漏"><a href="#闭包的缺点-容易引起内存泄漏" class="headerlink" title="闭包的缺点: 容易引起内存泄漏"></a>闭包的缺点: 容易引起内存泄漏</h3><h3 id="闭包的使用场景-1-封装-2-变量引用"><a href="#闭包的使用场景-1-封装-2-变量引用" class="headerlink" title="闭包的使用场景: 1.封装   2.变量引用"></a>闭包的使用场景: 1.封装   2.变量引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var a = (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">           var name = <span class="string">"kx"</span></span><br><span class="line">           var age = <span class="string">"10"</span></span><br><span class="line">           <span class="built_in">return</span> <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">               <span class="built_in">return</span> &#123;</span><br><span class="line">                   name: name</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;)()</span><br><span class="line"></span><br><span class="line">       var b = a()</span><br><span class="line">       console.log(b.name</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h5 id="典型例子"><a href="#典型例子" class="headerlink" title="典型例子"></a>典型例子</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=<span class="string">"menu"</span>&gt;</span><br><span class="line">       &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">   &lt;/ul&gt;</span><br><span class="line">   &lt;div id=<span class="string">"box"</span>&gt;盒子&lt;/div&gt;</span><br><span class="line">   &lt;script&gt;</span><br><span class="line">       //点击每一个li时，弹出自身的位置</span><br><span class="line">       var lis = document.getElementById(<span class="string">'menu'</span>).children;</span><br><span class="line">       // console.log(lis);</span><br><span class="line">       //添加点击事件</span><br><span class="line">       <span class="keyword">for</span> (var i = 0, len = lis.length; i &lt; len; i++) &#123;</span><br><span class="line">           lis[i]._index=i;//为每一个li新增属性_index</span><br><span class="line">           lis[i].onclick = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">               // alert(<span class="string">'hello'</span>);</span><br><span class="line">               // alert(i); //i=4</span><br><span class="line">               alert(this._index);</span><br><span class="line">           &#125;;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/12/hello-world/" data-id="ck43fmhur0000kkuxhl3d1rt6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/12/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/" data-id="ck43fzin90001mkux7ruqhsl6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -179,11 +169,11 @@
       <ul>
         
           <li>
-            <a href="/blog/2019/12/12/youhua/">youhua</a>
+            <a href="/blog/2019/12/12/%E8%A1%A8%E5%8D%95%E6%A0%A1%E9%AA%8C/">表单校验</a>
           </li>
         
           <li>
-            <a href="/blog/2019/12/12/hello-world/">什么是闭包</a>
+            <a href="/blog/2019/12/12/%E4%BB%80%E4%B9%88%E6%98%AF%E9%97%AD%E5%8C%85/">什么是闭包</a>
           </li>
         
       </ul>
